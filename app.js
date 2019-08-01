@@ -11,66 +11,88 @@ function computerPlay() {
     }
 }
 
-let playerPlay= () => {
-    let choice = prompt("Rock, Paper, or YEET?");
-    return choice.toLowerCase(); 
+let playerPlay = () => {
+    let choice;
+    choice = prompt("Rock, Paper, or YEET?");
+    
+    while (choice.toLowerCase() != "rock" && choice.toLowerCase() != "paper" && choice.toLowerCase() != "yeet") {
+        alert ("Invalid user entry");
+        choice = prompt("Rock, Paper, or YEET?");
+
+    }
+        
+    return choice.toLowerCase();
 
 }
 
-
-const computerSelection = computerPlay()
-const playerSelection = playerPlay()
-
 function rockPaperYeet(playerSelection, computerSelection) {
-   let result;
+    let result = "";
 
     if (playerSelection == computerSelection) {
         result = "TIE!";
     }
     else if (playerSelection == "rock", computerSelection == "yeet") {
-         result = "You Win!";
+        result = "You Win!";
     }
     else if (playerSelection == "rock", computerSelection == "paper") {
-         result = "You Lose!";
+        result = "You Lose!";
     }
     else if (playerSelection == "paper", computerSelection == "yeet") {
-         result = "You Lose!";
+        result = "You Lose!";
     }
     else if (playerSelection == "paper", computerSelection == "rock") {
-         result = "You Win!";
+        result = "You Win!";
     }
     else if (playerSelection == "yeet", computerSelection == "rock") {
-         result = "You Lose!";
+        result = "You Lose!";
     }
-    else {        result = "You Win!";}
-    
+    else { result = "You Win!"; }
+
     return result;
-    
+
 
 }
 
-console.log(rockPaperYeet(playerSelection,computerSelection));
+function game() {
+    let win = 0;
+    let loss = 0;
+    let tie = 0;
 
-/* PSEUDOCODE FOR GAME 
+    for (i = 0; i < 5; i++) {
+        let computerSelection = computerPlay();
+        let playerSelection = playerPlay();
+        let result = rockPaperYeet(playerSelection, computerSelection);
+        if (result === "You Win!") {
+            ++win;
+            console.log(result + ` You have ${win} wins`);
+        }
+        else if (result === "You Lose!") {
+            ++loss;
+            console.log(result + ` You have ${loss} losses`);
+        }
+        else {
+            ++tie;
+            console.log(result + ` You have ${tie} ties`);
+        }
+    }
+    console.log("Game over!");
+    console.log("Your final score is...");
+    console.log(`${win} wins, ${loss} losses, and ${tie} ties.`);
 
-function game()
-let win;
-let loss;
-
-for i=0; i<5; i++ {
-    playerPlay();
-    if:
-    rockPaperYeet(playerSelection,computerSelection)= "You Win!"
-    wincount++
-    else if:
-    rockPaperYeet(playerSelection,computerSelection)= "You Lose!"
-    losscount++
-    else:
-    tiecount++
-switch (tieCount){
-    case:
+    if(win>loss && win>tie){
+        console.log("BY AZURA BY AZURA BY AZURA, IT'S THE GRAND CHAMPION!");
+    }
+    else if(loss>win &&loss>tie){
+        console.log("Is this loss...?");
+    }
+    else{
+        console.log("It's a tie. Nobody likes ties. f5 and do it again.");
+    }
 }
-}
+
+console.log("Welcome to Rock,paper,YEET!");
+console.log("This basic console version is the same game as Rock, Paper, Scissors, with yeet replacing scissors.");
+console.log("type 'game()' to get started!");
 
 
 
@@ -92,7 +114,3 @@ switch (tieCount){
 
 
 
-
-
-
-*/
