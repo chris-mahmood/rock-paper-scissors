@@ -1,4 +1,7 @@
 body {
-background-image: url("yeet.jpg");
+/*background-image: url("yeet.jpg");*/
 background-color: rgba(175, 12, 75, 0.712);
+}
+.button :hover{
+    background-color: rgba(12, 156, 175, 0.712)
 }
