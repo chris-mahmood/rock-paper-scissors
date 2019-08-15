@@ -1,7 +1,113 @@
-body {
-/*background-image: url("yeet.jpg");*/
-background-color: rgba(175, 12, 75, 0.712);
+* {
+    padding:0;
+    margin:0;
+ }
+
+#content {
+position: absolute;
+width: 100vw;
+height:100vh;
+background-image: url("bckRun.jpg");
+background-color: rgb(16, 0, 71);
+background-size:cover;
 }
-.button :hover{
-    background-color: rgba(12, 156, 175, 0.712)
+
+
+
+.button{
+    display: inline-block;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 100%;
+    margin: 5px;
+    bottom: 35%;
+    cursor: crosshair;
+    background-image: linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+#btnBox{
+    position: absolute;
+    bottom: 0;
+    width:500px;
+    margin-left:-250px;
+    left:50%;
+    display: flex;              
+    flex-direction: row;     
+    justify-content: center;    
+    align-items: center;        
+    height: 500px;
+    text-align: center;
+}
+
+.button:hover
+{
+    filter: invert(100%);
+    color: #FFF;
+    box-shadow: 2px 4px 2px rgb(18, 80, 36), 4px 7px 3px #527300, 6px 9px 3px rgb(221, 210, 146);
+}
+#stats{
+    display:none;
+    font-size: 1.3em;
+    }
+
+#results{
+        font-size: 1.4em;
+    }
+
+
+#infoBox{
+    position: absolute;
+    top: 3.5%;
+    width: 850px;
+    left:50%;
+    margin-left: -425px; 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px groove #FF6AD5;
+    border-radius: 5px;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
+        background-image: url("bckWave.jpg");
+        opacity:0.7;
+}
+
+#btnRock{
+
+background-image: url("rock.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-position: center;
+}
+#btnPaper{
+
+background-image: url("paper.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-position: center;
+background-repeat: no-repeat;
+
+}
+#btnScissors{
+    
+background-image: url("scissors.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+#btnReset{
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+#btnStats{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    font-size: 1.5em;
 }

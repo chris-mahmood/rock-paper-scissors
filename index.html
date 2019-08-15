@@ -10,18 +10,25 @@
 </head>
 
 <body>
-    <button id="btnRock" class="button">Rock</button>
-    <button id="btnPaper" class="button">Paper</button>
-    <button id="btnScissors" class="button">Scissors</button>
-    <div id="results"></div>
-    <div id="stats">
-<p id= totalWins></p>
-<p id= totalLosses></p>
-<p id= totalTies></p>
-
-
-
-
+    <div id="content">
+        <div id="infoBox">
+            <h2>Welcome to Rock Paper Scissors.</h2>
+            <h3>Please chose an option.</h3>
+            <div id="results"></div>
+            <div id="stats">
+                <p id=totalWins>You have 0 wins</p>
+                <p id=totalLosses>You have 0 losses</p>
+                <p id=totalTies>You have 0 ties</p>
+            </div>
+        </div>
+        <div id="image"></div>
+        <div id=btnBox>
+            <button id="btnRock" class="button"></button>
+            <button id="btnPaper" class="button"></button>
+            <button id="btnScissors" class="button"></button>
+            <button id="btnStats" class="button">Show Stats</button>
+            <button id="btnReset" class="button">Play Again?</button>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
