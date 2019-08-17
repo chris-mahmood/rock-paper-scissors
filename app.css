@@ -7,7 +7,7 @@
 position: absolute;
 width: 100vw;
 height:100vh;
-background-image: url("bckRun.jpg");
+background-image: url("images/bckRun.jpg");
 background-color: rgb(16, 0, 71);
 background-size:cover;
 }
@@ -75,25 +75,25 @@ background-size:cover;
        1px -1px 0 #000,
        -1px 1px 0 #000,
         1px 1px 0 #000;
-        background-image: url("bckWave.jpg");
+        background-image: url("images/bckWave.jpg");
         opacity:0.7;
 }
 
 #btnRock{
 
-background-image: url("rock.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-image: url("images/rock.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 background-position: center;
 }
 #btnPaper{
 
-background-image: url("paper.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-image: url("images/paper.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 background-position: center;
 background-repeat: no-repeat;
 
 }
 #btnScissors{
     
-background-image: url("scissors.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+background-image: url("images/scissors.png"),linear-gradient(0deg, rgba(180,58,169,1) 8%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
 background-position: center;
 background-repeat: no-repeat;
 
